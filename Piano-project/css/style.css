@@ -1,0 +1,53 @@
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/music.jpg");
+  background-size: cover;
+  font-family: 'Indie Flower', cursive, sans-serif;
+}
+
+h1 {
+  margin-top: 70px;
+  text-align: center;
+  color: #de4067;
+}
+
+.piano-keys {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 110px;
+}
+
+.piano-keys .piano-key-white {
+  height: 300px;
+  width: 50px;
+  flex-direction: column;
+  border: 2px #010101 solid;
+  background-color: #F4F4F4;
+  transition: all .07s ease;
+}
+
+.piano-keys .piano-key-black {
+  flex-direction: row;
+  background-color: #010101;
+  height: 180px;
+  width: 25px;
+  position: relative;
+  left: 25px;
+  top: -24px;
+}
+
+.piano-keys .sound {
+  position: relative;
+  top: 250px;
+  left: 35%;
+  font-weight: bold;
+}
+
+.piano-keys .playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 1rem #ffc600;
+}

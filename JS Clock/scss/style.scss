@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Berkshire+Swash');
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/time.jpg");
+  background-size: cover;
+  font-family: 'Berkshire Swash', cursive, sans-serif;
+}
+
+h1 {
+  margin-top: 70px;
+  text-align: center;
+  color: #F4F4F4;
+}
+
+.clock {
+  border-radius: 50%;
+  background: #0E3854;
+  background: -webkit-linear-gradient(left, #0E3854 0%, #37B8CB 50%, #1B1F54 100%);
+  background: -o-linear-gradient(left, #0E3854 0%, #37B8CB 50%, #1B1F54 100%);
+  background: linear-gradient(to right, #0E3854 0%, #37B8CB 50%, #1B1F54 100%);
+  width: 30rem;
+  height: 30rem;
+  margin: 0 auto;
+
+  .clock-face {
+    border-radius: 50%;
+    background: #181C54;
+    background: -webkit-linear-gradient(bottom left, #181C54 0%, #7299CB 50%, #342C54 100%);
+    background: -o-linear-gradient(bottom left, #181C54 0%, #7299CB 50%, #342C54 100%);
+    background: linear-gradient(to top right, #181C54 0%, #7299CB 50%, #342C54 100%);
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+    position: relative;
+    top: 5%;
+
+    .interval{
+      background-color: black;
+      width: 10px;
+      height: 20px;
+    }
+    .interval-top{
+      margin: 0 auto;
+    }
+    .interval-right{
+      float: right;
+      margin-top: 44%;
+      margin-right: 1%;
+      transform: rotate(90deg);
+    }
+    .interval-bottom{
+      margin-top: 91%;
+      margin-left: 49%;
+    }
+    .interval-left{
+      margin-top: -52%;
+      margin-left: 1%;
+      transform: rotate(-90deg);
+    }
+
+    .hand {
+      width: 50%;
+      height: 6px;
+      background: black;
+      position: absolute;
+      top: 50%;
+      transform-origin: 100%;
+      transform: rotate(90deg);
+      transition-timing-function: ease-in-out;
+    }
+    .transition{
+      transition: all 0.05s;
+    }
+    .circle{
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        background-color: rgb(0, 0, 0);
+        margin: 0 auto;
+        position: relative;
+        bottom: 25px;
+      }
+    .hour-hand{
+      width: 45%;
+      left: 23px;
+    }
+  }
+}

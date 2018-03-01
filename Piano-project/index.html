@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Piano project</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+  <h1>Piano project</h1>
+  <div class="piano-keys">
+    <div data-key="65" class="piano-key-white">
+
+      <span class="sound">A</span>
+      <div class="piano-key-black">
+      </div>
+    </div>
+    <div data-key="83" class="piano-key-white">
+
+      <span class="sound">S</span>
+      <div class="piano-key-black">
+      </div>
+    </div>
+    <div data-key="68" class="piano-key-white">
+
+      <span class="sound">D</span>
+      <div class="piano-key-black">
+      </div>
+    </div>
+    <div data-key="70" class="piano-key-white">
+
+      <span class="sound">F</span>
+      <div class="piano-key-black">
+      </div>
+    </div>
+    <div data-key="71" class="piano-key-white">
+      <span class="sound">G</span>
+      <div class="piano-key-black">
+      </div>
+    </div>
+    <div data-key="72" class="piano-key-white">
+      <span class="sound">H</span>
+      <div class="piano-key-black">
+      </div>
+    </div>
+  </div>
+  <audio data-key="65" src="sounds/sound-A.wav"></audio>
+  <audio data-key="83" src="sounds/sound-S.wav"></audio>
+  <audio data-key="68" src="sounds/sound-D.wav"></audio>
+  <audio data-key="70" src="sounds/sound-F.wav"></audio>
+  <audio data-key="71" src="sounds/sound-G.wav"></audio>
+  <audio data-key="72" src="sounds/sound-H.wav"></audio>
+  <script src="js/jquery-3.2.1.js"></script>
+  <script src="js/index.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css?family=Berkshire+Swash");
+html {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url("../images/background-image.jpg");
+  background-size: cover;
+  font-family: 'Berkshire Swash', cursive, sans-serif;
+}
+
+.flex-container {
+  min-height: 100vh;
+  display: flex;
+  overflow: hidden;
+}
+
+.flex-container .panels {
+  box-shadow: inset 0 0 0 5px rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  display: flex;
+  flex: 1;
+  transition: font-size 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11), flex 0.7s cubic-bezier(0.61, -0.19, 0.7, -0.11);
+}
+
+.flex-container .panel1 {
+  background-image: url("../images/panel1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-container .panel2 {
+  background-image: url("../images/panel2.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-container .panel3 {
+  background-image: url("../images/panel3.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-container .panel4 {
+  background-image: url("../images/panel4.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-container .panel5 {
+  background-image: url("../images/panel5.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+.flex-container .panels > * {
+  margin: 0;
+  width: 100%;
+  transition: transform 0.5s;
+  flex: 1 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex-container .panels > *:first-child {
+  transform: translateY(-100%);
+}
+
+.flex-container .panels.open-active > *:first-child {
+  transform: translateY(0);
+}
+
+.flex-container .panels > *:last-child {
+  transform: translateY(100%);
+}
+
+.flex-container .panels.open-active > *:last-child {
+  transform: translateY(0);
+}
+
+.flex-container .panels p {
+  text-transform: uppercase;
+  text-shadow: 0 0 4px rgba(0, 0, 0, 0.72), 0 0 14px rgba(0, 0, 0, 0.45);
+  font-size: 1em;
+}
+
+.flex-container .panels p:nth-child(2) {
+  font-size: 1.5em;
+}
+
+.flex-container .panels.open {
+  flex: 5;
+  font-size: 40px;
+}
