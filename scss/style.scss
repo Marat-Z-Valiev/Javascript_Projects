@@ -13,7 +13,7 @@ body {
 }
 
 h1 {
-  margin-top: 70px;
+  margin-top: 50px;
   text-align: center;
   color: #F4F4F4;
 }
@@ -42,6 +42,7 @@ h1 {
     -webkit-box-shadow: 0 0 5px 6px rgba(0,0,0,0.5);
     box-shadow: 0 0 5px 6px rgba(0,0,0,0.5);
   }
+
   //Flip card effect
   .project-card {
     position: relative;
@@ -90,7 +91,7 @@ h1 {
       background-image: url("../images/project3.jpg");
     }
 
-    .project1-card-back {
+    .project-card-back {
       display: flex;
       justify-content: center;
       align-items: center;
