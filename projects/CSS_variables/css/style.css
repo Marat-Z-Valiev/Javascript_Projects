@@ -1,0 +1,102 @@
+@import url("https://fonts.googleapis.com/css?family=Coiny");
+:root {
+  --bg-color: #2597e7;
+  --main-font: 'Coiny', cursive, sans-serif;
+  --rotate: rotate(0deg);
+  --radius: 0;
+}
+
+body {
+  background: url("../images/bg-image.jpg") no-repeat center center;
+  text-align: center;
+  font-family: var(--main-font);
+}
+
+body h1 {
+  color: #F4F4F4;
+  margin-bottom: 50px;
+}
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.flex-container .box {
+  width: 300px;
+  height: 300px;
+  border: 3px solid #1636e3;
+  background-color: var(--bg-color);
+  -webkit-box-shadow: 1px 5px 9px 3px rgba(0, 0, 0, 0.71);
+  box-shadow: 1px 5px 9px 3px rgba(0, 0, 0, 0.71);
+  transform: rotate(var(--rotate));
+  border-radius: var(--radius);
+}
+
+.controls {
+  margin-top: 40px;
+}
+
+.controls label {
+  font-size: 1.5em;
+}
+
+.controls input {
+  margin-top: 30px;
+  margin-left: 10px;
+}
+
+.controls .slider {
+  -webkit-appearance: none;
+  height: 15px;
+  border-radius: 5px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: 0.2s;
+  transition: opacity 0.2s;
+}
+
+.controls .slider:hover {
+  opacity: 1;
+}
+
+.controls .slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #141bd9;
+  cursor: pointer;
+}
+
+.controls .slider::-moz-range-thumb {
+  width: 23px;
+  height: 23px;
+  border-radius: 50%;
+  background: #141bd9;
+  cursor: pointer;
+}
+
+.controls .radius {
+  margin-right: 83px;
+}
+
+.controls .value {
+  font-size: 1em;
+}
+
+@media screen and (max-width: 360px) {
+  .flex-container .box {
+    width: 200px;
+    height: 200px;
+  }
+  .controls label {
+    font-size: 1em;
+  }
+  .controls .radius input {
+    width: 80px;
+  }
+}
