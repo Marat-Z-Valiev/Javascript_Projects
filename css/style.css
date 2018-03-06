@@ -138,7 +138,7 @@ h1 {
   background: #014047;
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 768px) {
   .main-block {
     justify-content: center;
     flex-direction: row;
