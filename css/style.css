@@ -147,4 +147,7 @@ h1 {
     justify-content: center;
     flex-direction: row;
   }
+  .main-block .project-card {
+    margin-bottom: 50px;
+  }
 }

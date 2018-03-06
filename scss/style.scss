@@ -133,10 +133,10 @@ h1 {
           width: 80px;
           text-align: center;
 
-          &:hover{
+          &:hover {
             background: #016672;
           }
-          &:active{
+          &:active {
             background: #014047;
           }
         }
@@ -146,8 +146,12 @@ h1 {
 
 //Repsonsive design
 @media screen and (max-width: 360px) {
-  .main-block{
+  .main-block {
     justify-content: center;
     flex-direction: row;
+
+    .project-card {
+      margin-bottom: 50px;
+    }
   }
 }
