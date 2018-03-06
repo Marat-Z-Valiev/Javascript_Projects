@@ -21,18 +21,14 @@ h1 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-  -ms-flex-pack: justify;
-  justify-content: space-between;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-flow: column wrap;
-  flex-flow: column wrap;
+  flex-wrap: wrap;
+}
+
+.main-block .row {
+  display: flex;
   width: 100vw;
-  height: 100vh;
+  justify-content: space-evenly;
+  margin-top: 50px;
 }
 
 .main-block .projects {
@@ -146,6 +142,11 @@ h1 {
   .main-block {
     justify-content: center;
     flex-direction: row;
+  }
+  .main-block .row {
+    width: 86vw;
+    flex-direction: column;
+    margin-top: 30px;
   }
   .main-block .project-card {
     margin-bottom: 50px;
