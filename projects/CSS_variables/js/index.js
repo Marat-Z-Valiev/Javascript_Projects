@@ -3,7 +3,6 @@ const inputs = Array.from($('.controls input'));
 
 function handleUpdate() {
   const suffix = this.dataset.sizing || '';
-  console.log(suffix);
   $('.box').css(`--${this.name}`, this.value + suffix);
   $(this).next().html(this.value + suffix);
 }
