@@ -1,8 +1,8 @@
 const button = $('#add-item');
 const input = $('#input');
 const checkboxes = $('input[type="checkbox"]');
-// const delete = $('.delete-icon');
 
+//Add new checklist item by clcking on the button and pressing enter
   button.click(function() {
     let inputValue = input.val();
     if(inputValue != ''){
@@ -17,6 +17,13 @@ const checkboxes = $('input[type="checkbox"]');
     }
   });
 
+//Delete an item by clicking on delete icon
+
   $(document).on('click','.delete-icon', function() {
     $(this).closest('div').remove();
   });
+
+  //Add sort functionality using Jquery UI
+  $(function(){
+    $('.todo-list').sortable();
+  })
