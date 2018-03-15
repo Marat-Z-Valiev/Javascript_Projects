@@ -1,5 +1,7 @@
 @import url("https://fonts.googleapis.com/css?family=Itim");
 
+//Variables
+$color: rgb(104, 166, 212);
 
 body{
   font-family: 'Itim', cursive, serif;
@@ -8,7 +10,7 @@ body{
   box-sizing: border-box;
 }
 
-h1{
+header{
   color: #F4F4F4;
   text-align: center;
 }
@@ -19,10 +21,18 @@ h1{
 
   input[type="search"]{
     width: 300px;
+    border-radius: 5px;
   }
 
   button{
     font-size: 18px;
+    border-radius: 5px;
+    background-color: $color;
+    border: $color;
+
+    &:hover{
+      cursor: pointer;
+    }
   }
 }
 
@@ -35,9 +45,10 @@ h1{
   .item{
     display: flex;
     align-items: center;
-    background-color: rgb(104, 166, 212);
+    background-color: $color;
     border: 2px solid rgb(0, 0, 0);
     border-bottom: 0;
+    border-radius: 5px;
 
     &:last-child{
       border-bottom: 2px solid rgb(0, 0, 0);
@@ -52,6 +63,7 @@ h1{
 
     p{
       margin:0;
+      margin-right: 15px;
       padding:20px;
       transition:background 0.2s;
       flex:1;
@@ -64,6 +76,7 @@ h1{
 
     input:checked + p{
       text-decoration: line-through;
+      background-color: #3578ab;
     }
     .delete-icon{
       width: 20px;
