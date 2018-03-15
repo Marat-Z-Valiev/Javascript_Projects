@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css?family=Itim");
 body {
-  font-family: 'Itim', cursive, serif;
+  font-family: "Itim", cursive, serif;
   background: url("../images/bg.jpg") no-repeat fixed center center;
   background-size: cover;
   box-sizing: border-box;
@@ -26,6 +26,8 @@ header {
   border-radius: 5px;
   background-color: #68a6d4;
   border: #68a6d4;
+  height: 35px;
+  margin-left: 5px;
 }
 
 .input-field button:hover {
@@ -66,7 +68,7 @@ header {
   padding: 20px;
   transition: background 0.2s;
   flex: 1;
-  font-family: 'helvetica neue';
+  font-family: "Itim", cursive, serif;
   font-size: 18px;
   font-weight: 200;
   border-left: 2px solid black;

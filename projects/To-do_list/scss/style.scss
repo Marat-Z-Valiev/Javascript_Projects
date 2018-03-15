@@ -2,9 +2,10 @@
 
 //Variables
 $color: rgb(104, 166, 212);
+$main-font: 'Itim', cursive, serif;
 
 body{
-  font-family: 'Itim', cursive, serif;
+  font-family: $main-font;
   background: url("../images/bg.jpg") no-repeat fixed center center;
   background-size: cover;
   box-sizing: border-box;
@@ -29,6 +30,8 @@ header{
     border-radius: 5px;
     background-color: $color;
     border: $color;
+    height: 35px;
+    margin-left: 5px;
 
     &:hover{
       cursor: pointer;
@@ -67,7 +70,7 @@ header{
       padding:20px;
       transition:background 0.2s;
       flex:1;
-      font-family:'helvetica neue';
+      font-family: $main-font;
       font-size: 18px;
       font-weight: 200;
       border-left: 2px solid rgb(0, 0, 0);
