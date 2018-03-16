@@ -6,7 +6,7 @@ const checkboxes = $('input[type="checkbox"]');
   button.click(function() {
     let inputValue = input.val();
     if(inputValue != ''){
-      $('.todo-list').append(`<div class="item"><input type="checkbox"><p>${inputValue}</p><span><img class="delete-icon" src="images/delete.svg"></span></div>`);
+      $('.todo-list').append(`<div class="item"><input type="checkbox"><p>${inputValue}</p><span><img class="delete-icon hidden" src="images/delete.svg"></span></div>`);
       input.val('');
     }
   });
@@ -18,10 +18,19 @@ const checkboxes = $('input[type="checkbox"]');
   });
 
 //Delete an item by clicking on delete icon
-
   $(document).on('click','.delete-icon', function() {
     $(this).closest('div').remove();
   });
+//Display delete icon on mouse hover
+  $(document).on('mouseover','.item', function() {
+    $(this).find('img').removeClass('hidden');
+  });
+//Hide delete icon on mouse hover
+  $(document).on('mouseout','.item', function() {
+    $(this).find('img').addClass('hidden');
+  });
+
+
 
   //Add sort functionality using Jquery UI
   $(function(){
