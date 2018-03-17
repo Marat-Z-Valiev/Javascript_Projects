@@ -21,16 +21,16 @@ const checkboxes = $('input[type="checkbox"]');
   $(document).on('click','.delete-icon', function() {
     $(this).closest('div').remove();
   });
+
 //Display delete icon on mouse hover
   $(document).on('mouseover','.item', function() {
     $(this).find('img').removeClass('hidden');
   });
-//Hide delete icon on mouse hover
+
+//Hide delete icon on mouse out
   $(document).on('mouseout','.item', function() {
     $(this).find('img').addClass('hidden');
   });
-
-
 
   //Add sort functionality using Jquery UI
   $(function(){
