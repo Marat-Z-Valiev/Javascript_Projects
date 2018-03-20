@@ -10,6 +10,7 @@ const checkboxes = $('input[type="checkbox"]');
       input.val('');
     }
   });
+  //Add item on clicking the enter key
   input.keydown(function(event) {
     if (event.keyCode === 13) {
       event.preventDefault;
